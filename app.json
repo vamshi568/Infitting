@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "shop",
-    "slug": "shop",
-    "version": "1.0.0",
+    "name": "Infitting",
+    "slug": "Infitting",
+    "version": "2.1.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/infitting3.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/infitting3.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,20 +17,40 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/infitting3.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tailor.infitting",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.SEND_SMS"
+      ]
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/infitting3.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "89ce97d1-1f1a-4e54-8e1c-e9ee4fbf7501"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/89ce97d1-1f1a-4e54-8e1c-e9ee4fbf7501"
     }
   }
 }

@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# InFitting: A Customer and Order Management App for Tailor Shops
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## About the Project
 
-## Get started
+At the beginning of my journey, I wanted to build an app for my dad, who used to take measurements and orders in a book. Sometimes, it took time to search for the customer he needed, so I decided to build this app. However, this app is not only for my dad but can also be used by any shop owner to manage and organize their customers.
 
-1. Install dependencies
+I spent about 300+ hours on this project to build this app. This includes time spent on creating the UI, adding features, fixing bugs, and creating a beautiful and user-friendly app. I hope you find this app helpful and enjoy using it.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- **Customer details management**: Manage customer details easily and efficiently.
+- **Measurement management**: Store and manage measurements for each customer.
+- **Order management**: Manage orders and order details.
+- **Send direct SMS to customers regarding their orders**: Notify customers about their orders easily.
 
-   ```bash
-    npx expo start
-   ```
+## Built with
 
-In the output, you'll find options to open the app in a
+- **Node.js**: JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
+- **MongoDB**: A source-available cross-platform document-oriented database program.
+- **Cloudinary**: A cloud-based image and video management service.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+No need to clone any code or set up a server. Simply download the [APK file](https://expo.dev/artifacts/eas/kjjWVC6wgzrDtrsVUVC3Hp.apk) from the latest release and install it on your mobile device. The app is built using Expo EAS Build, so everything is already connected and ready to use.
 
-## Get a fresh project
+## Contributing
 
-When you're ready, run:
+If you want to contribute to this project, you can follow these steps:
 
-```bash
-npm run reset-project
-```
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Test your changes.
+5. Commit and push your changes to your forked repository.
+6. Create a pull request.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## Contact
 
-To learn more about developing your project with Expo, look at the following resources:
+If you have any questions or need help with this project, feel free to contact me at [kyadarivamshi568@gmail.com](mailto:kyadarivamshi568@gmail.com). You can also find me on [LinkedIn](https://www.linkedin.com/in/vamshi-kris/).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Acknowledgements
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo](https://expo.dev)
+- [MongoDB](https://www.mongodb.com)
+- [Cloudinary](https://cloudinary.com)
+- [Node.js](https://nodejs.org)
+- [Express](https://expressjs.com)
