@@ -13,6 +13,8 @@ import collar from "../assets/icons/shirt/collar.png";
 import cuff from "../assets/icons/shirt/cuff.png";
 import cufflength from "../assets/icons/shirt/cufflength.png";
 import elbow from "../assets/icons/shirt/elbow.png";
+import upperhand from "../assets/icons/shirt/upperhand.png"
+import lowerhand from "../assets/icons/shirt/lowerhand.png"
 import length from "../assets/icons/shirt/length.png";
 import lowerfront from "../assets/icons/shirt/lowerfront.png";
 import middlefront from "../assets/icons/shirt/middlefront.png";
@@ -48,6 +50,8 @@ export default {
   cuff,
   cufflength,
   elbow,
+  upperhand,
+lowerhand,
   length,
   lowerfront,
   middlefront,

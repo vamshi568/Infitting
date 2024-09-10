@@ -63,25 +63,23 @@ export function listOfshirts() {
     "Lower Front",
     "Back Middle",
     "Back Bottom",
-    "Sleeve Placket",
     "Cuff",
     "Cuff Length",
     "Sleeve",
-    "Elbow",
+    "Lower hand",
+    "Upper hand",
     "Collar",
   ];
 }
 export function listOfpants() {
   return [
     "Leg Length",
-    "Kamar",
     "Belt",
     "Seat",
     "Thigh",
     "Knee",
     "Leg Bottom",
     "Kisthak",
-    "Front Crotch",
   ];
 }
 export function listOfshirtdetails() {
