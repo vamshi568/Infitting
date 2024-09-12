@@ -57,7 +57,7 @@ const Appbla = () => {
 
   
   useEffect(() => {
-    // checkForUpdates();
+    checkForUpdates();
     notification()
     setIsSlideUp(true);
     getToken();
