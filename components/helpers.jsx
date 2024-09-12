@@ -74,6 +74,7 @@ export function listOfshirts() {
 export function listOfpants() {
   return [
     "Leg Length",
+    "Inside Length",
     "Belt",
     "Seat",
     "Thigh",
@@ -1717,7 +1718,7 @@ export const AddShop = ({ data }) => {
             <Text className="text-lg font-bold text-accent1">Shop Address</Text>
             <View className="flex flex-row items-center">
               <TextInput
-                className="text-lg font-light text-accent1 border-b-[1px] mb-3 border-accent1 w-72"
+                className="text-lg font-light text-accent1 border-b-[1px] mb-3 border-accent1 w-80"
                 placeholder="Enter Shop Address"
                 value={state.address}
                 multiline

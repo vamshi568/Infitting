@@ -240,13 +240,13 @@ const Home = () => {
           : renderEmptyList()}
       </ScrollView>
       <TouchableOpacity
-        className="w-16 h-16 bg-[#ffffff] justify-center rounded-full bottom-5 right-5 z-10 absolute"
+        className="w-16 h-16 bg-accent1 justify-center rounded-full bottom-5 right-5 z-10 absolute"
         onPress={() => router.push(`/orders/new`)}
       >
-        <Image
+        {/* <Image
           source={icons.plus}
           className="w-[65px] h-16 self-center rounded-full"
-        />
+        /> */}
         <Text className="text-primary text-center left-[15px] font-bold text-sm absolute">
           New Order
         </Text>

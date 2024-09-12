@@ -22,7 +22,7 @@ const AllList = () => {
   const [showModal, setShowModal] = useState(false);
   const handleFetchData = useCallback(async () => {
     setLoading(true);
-    const data = await searchCustomers('');
+    const data = await searchCustomers("");
     setListOfCustomers([...data]);
     setFilter("");
     setLoading(false);
@@ -40,21 +40,21 @@ const AllList = () => {
           >
             <View className="flex flex-row items-center justify-center m-1 bg-backgeound rounded-xl p-4">
               <View className="bg-secondary w-14 h-14 items-center justify-center mr-4 rounded-full">
-              <Image
-                source={item.profile_pic
-                  ? {
-                      uri: `${serverUrl()}/photos/${item.profile_pic}`,
-                    }
-                  : require('../../assets/icons/Profile1.png')
-                }
-                className={
-                  item.profile_pic
-                    ? "w-full h-full rounded-full"
-                    : "w-10 h-10 rounded-full"
-                }
-              />
-
-</View>
+                <Image
+                  source={
+                    item.profile_pic
+                      ? {
+                          uri: `${serverUrl()}/photos/${item.profile_pic}`,
+                        }
+                      : require("../../assets/icons/Profile1.png")
+                  }
+                  className={
+                    item.profile_pic
+                      ? "w-full h-full rounded-full"
+                      : "w-10 h-10 rounded-full"
+                  }
+                />
+              </View>
               <View className="self-start">
                 <Text className="text-lg font-bold text-accent1">
                   {item.name.length > 13
@@ -85,16 +85,20 @@ const AllList = () => {
       );
     }
     return listOfCustomers;
-  }, [filter]);
+  }, [filter,listOfCustomers]);
 
   if (loading) {
     return <Loader />;
   }
   if (listOfCustomers.length === 0) {
     return (
-      <View className="flex h-screen justify-center items-center">
-        <Text className="text-accent1 text-xl text-center ">No customers</Text>
-      </View>
+      <RefreshControl refreshing={loading} onRefresh={handleFetchData}>
+        <View className="flex h-screen justify-center items-center w-full">
+          <Text className="text-accent1 text-xl text-center pt-36">
+            No customers
+          </Text>
+        </View>
+      </RefreshControl>
     );
   }
   const items = [

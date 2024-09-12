@@ -10,6 +10,7 @@ import {
   Modal,
   Button,
   RefreshControl,
+  Alert,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { router, useLocalSearchParams } from "expo-router";
@@ -118,7 +119,7 @@ const CustomerProfile = () => {
     try {
       await deleteCustomer(profile_id);
       console.log("deleted", profile_id);
-      router.back();
+      router.replace("/home");
     } catch (error) {
       console.error(error);
     } finally {
@@ -150,15 +151,10 @@ const CustomerProfile = () => {
   return (
     <SafeAreaView className="flex-1 bg-primary ">
       <TouchableOpacity
-        className=" w-16 h-16 bg-[#ffffff] justify-center rounded-full bottom-5 right-5 z-10 absolute"
+        className=" w-16 h-16 bg-accent1 justify-center rounded-full bottom-5 right-5 z-10 absolute"
         onPress={() => router.push(`/orders/${profile_id}`)}
       >
-        <Image
-          source={icons.plus}
-          className="w-[65px] h-16 self-center rounded-full"
-        />
-
-        <Text className="text-primary text-center left-[15px] font-bold text-sm absolute ">
+               <Text className="text-primary text-center left-[15px] font-bold text-sm absolute ">
           New Order
         </Text>
       </TouchableOpacity>
@@ -375,7 +371,23 @@ const CustomerProfile = () => {
             </Text>
             <View className="w-11/12">{renderOrderList(orders)}</View>
           </View>
-          <Button className="w-11/12 self-center" onPress={handleDelete} title="Delete Profile"/>
+          <Button
+            className="w-11/12 self-center"
+            onPress={() =>
+              Alert.alert(
+                "Delete Profile",
+                "Are you sure you want to delete this profile?",
+                [
+                  {
+                    text: "Cancel",
+                    style: "cancel",
+                  },
+                  { text: "OK", onPress: handleDelete },
+                ]
+              )
+            }
+            title="Delete Profile"
+          />
         </View>
       </ScrollView>
       <Modal

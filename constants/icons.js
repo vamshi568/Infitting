@@ -13,8 +13,8 @@ import collar from "../assets/icons/shirt/collar.png";
 import cuff from "../assets/icons/shirt/cuff.png";
 import cufflength from "../assets/icons/shirt/cufflength.png";
 import elbow from "../assets/icons/shirt/elbow.png";
-import upperhand from "../assets/icons/shirt/upperhand.png"
-import lowerhand from "../assets/icons/shirt/lowerhand.png"
+import upperhand from "../assets/icons/shirt/upperhand.png";
+import lowerhand from "../assets/icons/shirt/lowerhand.png";
 import length from "../assets/icons/shirt/length.png";
 import lowerfront from "../assets/icons/shirt/lowerfront.png";
 import middlefront from "../assets/icons/shirt/middlefront.png";
@@ -31,6 +31,7 @@ import kisthak from "../assets/icons/pant/Kisthak.png";
 import knee from "../assets/icons/pant/knee.png";
 import legbottom from "../assets/icons/pant/bottom.png";
 import leglength from "../assets/icons/pant/Length.png";
+import insidelength from "../assets/icons/pant/insidelength.png";
 import seat from "../assets/icons/pant/seat.png";
 import thigh from "../assets/icons/pant/Thigh.png";
 
@@ -51,7 +52,7 @@ export default {
   cufflength,
   elbow,
   upperhand,
-lowerhand,
+  lowerhand,
   length,
   lowerfront,
   middlefront,
@@ -68,6 +69,7 @@ lowerhand,
   knee,
   legbottom,
   leglength,
+  insidelength,
   seat,
   thigh,
 };
