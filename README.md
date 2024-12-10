@@ -22,7 +22,7 @@ I spent about 300+ hours on this project to build this app. This includes time s
 
 ## Installation
 
-No need to clone any code or set up a server. Simply download the [APK file](https://expo.dev/artifacts/eas/kjjWVC6wgzrDtrsVUVC3Hp.apk) from the latest release and install it on your mobile device. The app is built using Expo EAS Build, so everything is already connected and ready to use.
+No need to clone any code or set up a server. Simply download the [APK file]([https://expo.dev/artifacts/eas/kjjWVC6wgzrDtrsVUVC3Hp.apk](https://drive.google.com/drive/folders/1n3oIzhfB2Ada6hxxtFcMRtucd2_e2a60?usp=drive_link)) from the latest release and install it on your mobile device. The app is built using Expo EAS Build, so everything is already connected and ready to use.
 
 ## Contributing
 
